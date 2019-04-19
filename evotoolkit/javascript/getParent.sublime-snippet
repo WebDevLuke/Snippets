@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+import getParent from "./../tools/getParent.js";
+getParent(${1:elem}, ${2:'c-input--calendar'})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>getParent</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+	<description>EvoToolkit getParent() function</description>
+</snippet>

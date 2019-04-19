@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+import fireEvent from "./../tools/fireEvent.js";
+fireEvent(${1:elem}, '${2:eventName}', ${3:{}})
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>fireEvent</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+	<description>EvoToolkit fireEvent() function</description>
+</snippet>
