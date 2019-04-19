@@ -1,0 +1,54 @@
+<snippet>
+	<content><![CDATA[
+//------------------------------------------------------------------------------------------------
+// ${1:MY COMPONENT}
+//------------------------------------------------------------------------------------------------
+
+@include render('${3:mycomponent}') {
+
+
+// OPTIONS
+//------------------------------------------------------------------------------------------------
+
+\$${2:component}-${3:mycomponent}-filter: false !default;
+\$${2:component}-${3:mycomponent}-modifiername-modifiers: $enable-all-classes !default; // False by default
+
+
+// COMPONENT COLOURS
+//------------------------------------------------------------------------------------------------
+
+\$${2:\component}-${3:mycomponent}-name-color: color('light') !default;
+
+
+// BLOCK & ELEMENTS
+//------------------------------------------------------------------------------------------------
+
+.c-${3:mycomponent} {
+	$0
+}
+
+.c-${3:mycomponent}__element {
+
+}
+
+
+// MODIFIER
+//------------------------------------------------------------------------------------------------
+
+@include filter('c-${3:mycomponent}--modifier', \$component-${3:mycomponent}-filter, \$component-${3:mycomponent}-modifiername-modifiers) {
+	.c-${3:mycomponent}--modifier {
+
+	}
+}
+
+
+// END RENDER
+//------------------------------------------------------------------------------------------------
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>evocss</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.scss</scope>
+	<description>EvoToolkit SCSS Component Template</description>
+</snippet>

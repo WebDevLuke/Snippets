@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+//------------------------------------------------------------------------------------------------
+// ${1:MY COMPONENT}
+//------------------------------------------------------------------------------------------------
+
+// Import all the classes and functions we need
+import EvoToolkit from './../../../../node_modules/evotoolkit/src/js/settings/classes.js';
+
+export default class ${2:MyComponent} extends EvoToolkit.${3:Component} {
+	init = (block, options) => {
+		$0
+	}
+}
+
+EvoToolkit.register('${4:component}', '${5:.c-my-component}', '${6:myComponent}', ${7:MyComponent});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>evojs</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+	<description>EvoToolkit JavaScript Component Template</description>
+</snippet>
